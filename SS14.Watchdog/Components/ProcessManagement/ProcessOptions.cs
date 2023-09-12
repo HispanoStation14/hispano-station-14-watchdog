@@ -3,7 +3,7 @@
 /// <summary>
 /// Options for server instance process management.
 /// </summary>
-public class ProcessOptions
+public sealed class ProcessOptions
 {
     public const string Position = "Process";
 
@@ -30,9 +30,4 @@ public enum ProcessMode
     /// Processes are managed via <see cref="ProcessManagerBasic"/>.
     /// </summary>
     Basic,
-
-    /// <summary>
-    /// Processes are managed via <see cref="ProcessManagerSystemd"/>.
-    /// </summary>
-    Systemd,
 }
